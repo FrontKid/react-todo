@@ -9,7 +9,7 @@ import TodoList from "./components/Todos/TodoList";
 //two buttons reset and delete completed
 import TodosEctions from "./components/Todos/TodosEctions";
 //styles
-import './App.css';
+import './App.scss';
 
 function App() {
   //state for save user data
