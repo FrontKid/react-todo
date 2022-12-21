@@ -26,7 +26,7 @@ const TodoForm = ({ addTodo }) => { // accepts user text
         value={userText}
         onChange={e => setUserText(e.currentTarget.value)}
       />
-      <Button className={style.form__button} title="sub" type='submit'>Submit</Button>
+      <Button className={style.form__button} title="sub" type='submit'>Add task</Button>
     </form>
   )
 }
