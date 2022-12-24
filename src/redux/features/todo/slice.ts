@@ -14,7 +14,9 @@ export const todoSlice = createSlice({
   initialState,
   reducers: {
     setUserTodos(state, action: PayloadAction<TUserTodos[]>) {
-      state.userTodos = action.payload
+      if (state.userText) {
+        state.userTodos = action.payload
+      }
     },
     setUserText(state, action: PayloadAction<string>) {
       state.userText = action.payload
