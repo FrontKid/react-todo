@@ -23,10 +23,7 @@ const Todo: React.FC<TUserTodos> = ({ isDone, userText, id }) => {
     <div className={`${style.todo} ${isDone && style.completedTodo}`}>
       <SiTodoist className={style.todoIcon} />
       <h3 className={style.todoText}>{userText}</h3>
-      <TiDelete className={style.deleteIcon} onClick={() => {
-        console.log(isDone);
-        return dispatch(deleteTodo(id as string))
-      }} />
+      <TiDelete className={style.deleteIcon} onClick={() => dispatch(deleteTodo(id as string))} />
       <BsCheckLg className={style.checkIcon} onClick={() => dispatch(toggleTodo(id as string))} />
     </div>
   )

@@ -21,6 +21,7 @@ const TodoForm: React.FC = () => {
 
   const onSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
+
     const newTodo = {
       userText,
       isDone: false,

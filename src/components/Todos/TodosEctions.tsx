@@ -27,10 +27,10 @@ const TodosEctions: React.FC = () => {
     <div className={style.todoActionsContainer}>
       <Button
         title="Delete completed todos"
-        onClick={() => dispatch(deleteCompletedTodos())} disabled={!completedTodosCount}><MdDeleteForever /></Button>
+        onclickHendler={() => dispatch(deleteCompletedTodos())} disabled={!completedTodosCount}><MdDeleteForever /></Button>
       <Button
         title="Reset todos"
-        onClick={() => dispatch(resetTodos())}><BiReset /></Button>
+        onclickHendler={() => dispatch(resetTodos())}><BiReset /></Button>
     </div>
   )
 }

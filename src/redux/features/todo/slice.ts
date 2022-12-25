@@ -22,9 +22,7 @@ export const todoSlice = createSlice({
       state.userText = action.payload
     },
     deleteTodo(state, action: PayloadAction<string>) {
-
       state.userTodos = state.userTodos.filter(deletedTodo => deletedTodo.id !== action.payload)
-
     },
     toggleTodo(state, action: PayloadAction<string>) {
       state.userTodos = state.userTodos.map(item => item.id === action.payload
