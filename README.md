@@ -5,7 +5,7 @@ This project you can add your daily tasks
 ## Created with typescript and redux
 
 The project logic is used in a state manager like Redax, 
-the redux folder structure is divided into type, slice and selector.
+the redux folder structure is divided into type, slice and selectors.
 
 Typescript typifies the application and avoids many mistakes early 
 in the development of the application.
